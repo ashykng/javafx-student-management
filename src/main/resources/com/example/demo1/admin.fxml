@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.adminController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="700.0" opacity="0.65">
+         <image>
+            <Image url="@IMG_20240106_154935_927.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutY="196.0" prefHeight="360.0" prefWidth="106.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 2;">
+         <children>
+            <HBox fx:id="menu" alignment="CENTER" prefHeight="76.0" prefWidth="106.0" style="-fx-border-color: #cbf6db; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3;">
+               <children>
+                  <ImageView fitHeight="15.0" fitWidth="13.0" opacity="0.53">
+                     <image>
+                        <Image url="@Screenshot%25202024-01-27%2520174153.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label style="-fx-font-weight: bold; -fx-font-size: 25;" text="Menu">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Label>
+               </children>
+            </HBox>
+            <HBox fx:id="professorList" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="106.0" style="-fx-background-radius: 20; -fx-border-color: #cbf6db; -fx-border-radius: 20; -fx-border-width: 3;">
+               <children>
+                  <Hyperlink onAction="#goHome" style="-fx-text-fill: black;" text="Home" underline="true">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </HBox>
+            <HBox fx:id="lessonList" alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="69.0" prefWidth="106.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #cbf6db; -fx-border-width: 3;">
+               <children>
+                  <Hyperlink onAction="#goLessonList" style="-fx-text-fill: black;" text="lesson List">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </HBox>
+            <HBox fx:id="logOut" alignment="CENTER" layoutX="10.0" layoutY="180.0" prefHeight="72.0" prefWidth="106.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #cbf6db; -fx-border-width: 3;">
+               <children>
+                  <Hyperlink onAction="#GoProfList" style="-fx-text-fill: black;" text="Professor list">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </HBox>
+            <HBox fx:id="professorList1" alignment="CENTER" prefHeight="70.0" prefWidth="106.0" style="-fx-background-radius: 20; -fx-border-color: #cbf6db; -fx-border-radius: 20; -fx-border-width: 3;">
+               <children>
+                  <Hyperlink onAction="#GoAddLesson" style="-fx-text-fill: black;" text="Add Lesson">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Text layoutX="147.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50; -fx-font-weight: bold;" text="Univrcity of Tabriz">
+         <fill>
+            <RadialGradient centerX="0.3495575390030853" centerY="0.32954545454545453" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.03380116820335388" green="0.5368421077728271" blue="0.09248927980661392" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.13414634146341464">
+                     <color>
+                        <Color red="0.08421052992343903" green="0.8421052694320679" blue="0.18526315689086914" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.25365853658536586">
+                     <color>
+                        <Color red="0.19688108563423157" green="0.5263158082962036" blue="0.2408057153224945" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.49268292682926823">
+                     <color>
+                        <Color red="0.07894736528396606" green="0.7894737124443054" blue="0.16184210777282715" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6">
+                     <color>
+                        <Color red="0.0918518528342247" green="0.6526315808296204" blue="0.16662247478961945" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6829268292682927">
+                     <color>
+                        <Color red="0.028888888657093048" green="0.410526305437088" blue="0.07977388054132462" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8560975609756097">
+                     <color>
+                        <Color red="0.008421052247285843" green="0.378947377204895" blue="0.051649123430252075" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.05299999937415123" green="0.5299999713897705" blue="0.11659999936819077" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+         <effect>
+            <DropShadow height="28.02" radius="11.754999999999999" spread="0.92" />
+         </effect>
+      </Text>
+      <Button fx:id="btn_exit" alignment="CENTER" contentDisplay="BOTTOM" layoutX="588.0" layoutY="29.0" mnemonicParsing="false" onAction="#exit" prefHeight="27.0" prefWidth="78.0" style="-fx-background-color: #32852A; -fx-border-radius: 30; -fx-background-radius: 30;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="49.07" radius="27.5475" spread="0.61" width="63.12" />
+         </effect>
+      </Button>
+      <Label layoutX="249.0" layoutY="226.0" style="-fx-font-size: 40; -fx-font-weight: bold;" text="Admin Page">
+         <textFill>
+            <RadialGradient centerX="0.5044247956402534" centerY="0.4356060678308661" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.050760235637426376" green="0.6526315808296204" blue="0.12097855657339096" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.11353445162984609">
+                     <color>
+                        <Color red="0.0442105270922184" green="0.5684210658073425" blue="0.12284210324287415" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.21277615467944724">
+                     <color>
+                        <Color red="0.03945419192314148" green="0.4842105209827423" blue="0.07651721686124802" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.3110954272396021">
+                     <color>
+                        <Color green="0.6421052813529968" blue="0.06421052664518356" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.424390243902439">
+                     <color>
+                        <Color red="0.052000001072883606" green="0.6499999761581421" blue="0.12176666408777237" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5390243902439024">
+                     <color>
+                        <Color red="0.04241715371608734" green="0.7157894968986511" blue="0.17709161341190338" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5878048780487805">
+                     <color>
+                        <Color red="0.15789473056793213" green="0.4736842215061188" blue="0.1894736886024475" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6634146341463415">
+                     <color>
+                        <Color red="0.052000001072883606" green="0.6499999761581421" blue="0.12176666408777237" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7536585365853657">
+                     <color>
+                        <Color red="0.1915789544582367" green="0.5684210658073425" blue="0.22926315665245056" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8571086235761414">
+                     <color>
+                        <Color red="0.052000001072883606" green="0.6499999761581421" blue="0.12176666408777237" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9666250861701081">
+                     <color>
+                        <Color red="0.022729044780135155" green="0.557894766330719" blue="0.11192332953214645" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <effect>
+            <DropShadow height="18.66" radius="7.075" spread="0.95" width="11.64" />
+         </effect>
+      </Label>
+      <Text layoutX="24.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18; -fx-font-weight: bold;" text="User Name :" wrappingWidth="106.00531768798828">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5132743447227816" centerY="0.43560606783086603" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.006549707613885403" green="0.5894736647605896" blue="0.0648421049118042" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.12682926829268293">
+                     <color>
+                        <Color green="1.0" blue="0.03333333507180214" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.16829268292682925">
+                     <color>
+                        <Color red="0.06261208653450012" green="0.7684210538864136" blue="0.08613905310630798" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.25609756097560976">
+                     <color>
+                        <Color red="0.11999999731779099" green="1.0" blue="0.14933332800865173" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.29756097560975614">
+                     <color>
+                        <Color red="0.06840000301599503" green="0.7599999904632568" blue="0.09145333617925644" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4170731707317073">
+                     <color>
+                        <Color red="0.09600000083446503" green="0.47999998927116394" blue="0.1088000014424324" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4853658536585365">
+                     <color>
+                        <Color red="0.09600000083446503" green="0.47999998927116394" blue="0.1088000014424324" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5146341463414633">
+                     <color>
+                        <Color red="0.09600000083446503" green="0.47999998927116394" blue="0.1088000014424324" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6609756097560975">
+                     <color>
+                        <Color green="1.0" blue="0.03333333507180214" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7804878048780488">
+                     <color>
+                        <Color red="0.09504873305559158" green="0.4842105209827423" blue="0.10802078992128372" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8682926829268293">
+                     <color>
+                        <Color red="0.06296296417713165" green="1.0" blue="0.09419753402471542" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.11481481790542603" green="1.0" blue="0.1443209946155548" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+         <effect>
+            <DropShadow height="24.51" radius="7.952500000000001" spread="0.79" width="9.3" />
+         </effect>
+      </Text>
+      <TextField fx:id="nameField" editable="false" layoutX="130.0" layoutY="31.0" prefHeight="26.0" prefWidth="115.0" style="-fx-background-color: transparent;">
+         <font>
+            <Font name="Imprint MT Shadow" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow height="25.68" radius="14.68" width="35.04" />
+         </effect>
+      </TextField>
+   </children>
+</Pane>

@@ -1,0 +1,10 @@
+.info-btn {
+    -fx-background-color: #66bb99;
+     -fx-cursor: hand;
+
+    -fx-text-fill: #6FFFE9;
+    -fx-background-radius: 5;
+    -fx-font-size: 15px;
+    -fx-text-align: center;
+}
+

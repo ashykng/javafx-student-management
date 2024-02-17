@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="787.0" style="-fx-background-color: #cde0e1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.reportController">
+   <children>
+      <AnchorPane prefHeight="50.0" prefWidth="787.0" style="-fx-background-color: #94c2a0;">
+         <children>
+            <Button fx:id="btn_exit" alignment="CENTER" contentDisplay="BOTTOM" layoutX="687.0" layoutY="9.0" mnemonicParsing="false" onAction="#exit" prefHeight="28.0" prefWidth="78.0" style="-fx-background-color: #32852A;" text="EXIT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="20.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user-cut.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="61.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name:" wrappingWidth="93.6181640625">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nameField" layoutX="127.0" layoutY="13.0" prefHeight="26.0" prefWidth="115.0" style="-fx-background-color: #94c2a0;" />
+         </children>
+      </AnchorPane>
+      <ScrollPane hbarPolicy="ALWAYS" layoutX="29.0" layoutY="239.0" prefHeight="338.0" prefWidth="726.0" vbarPolicy="NEVER">
+         <content>
+            <TableView fx:id="myTable" prefHeight="324.0" prefWidth="859.0">
+               <columns>
+                  <TableColumn fx:id="row" prefWidth="55.0" text="Row" />
+                  <TableColumn fx:id="lesson" prefWidth="119.0" text="Lesson" />
+                  <TableColumn fx:id="unit" prefWidth="57.0" text="Unit" />
+                  <TableColumn fx:id="teacher" prefWidth="137.0" text="teacher" />
+                  <TableColumn fx:id="classTime" prefWidth="179.0" text="Class time" />
+                  <TableColumn fx:id="examTime" prefWidth="161.0" text="Exam time" />
+                  <TableColumn fx:id="score" minWidth="0.0" prefWidth="64.0" text="Score" />
+                  <TableColumn fx:id="status" prefWidth="84.0" text="Status" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <AnchorPane layoutX="5.0" layoutY="72.0" prefHeight="114.0" prefWidth="777.0" style="-fx-border-color: green; -fx-border-width: 2; -fx-border-radius: 30; -fx-background-color: #e5e5dc; -fx-background-radius: 30;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Text layoutX="71.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15; -fx-font-weight: bold;" text="Student's Name:" underline="true">
+               <fill>
+                  <LinearGradient endY="0.81439394029704" startX="0.44318178837949584">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1621832400560379" green="0.8421052694320679" blue="0.2301754355430603" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.16862745583057404" green="0.0117647061124444" blue="0.0117647061124444" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text layoutX="331.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15; -fx-font-weight: bold;" text="Student's Code:" underline="true">
+               <fill>
+                  <LinearGradient endY="0.81439394029704" startX="0.44318178837949584">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1621832400560379" green="0.8421052694320679" blue="0.2301754355430603" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.16862745583057404" green="0.0117647061124444" blue="0.0117647061124444" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text layoutX="266.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 23;" text="Lessons list" textAlignment="CENTER" wrappingWidth="245.56365966796875" AnchorPane.topAnchor="6.1806640625">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.3143939240412279">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1621832400560379" green="0.8421052694320679" blue="0.2301754355430603" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.16862745583057404" green="0.0117647061124444" blue="0.0117647061124444" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="stdCode" editable="false" layoutX="441.0" layoutY="57.0" opacity="0.5" prefHeight="27.0" prefWidth="139.0" style="-fx-background-color: #e5e5dc;">
+               <font>
+                  <Font name="Imprint MT Shadow" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="stdName" editable="false" layoutX="188.0" layoutY="58.0" opacity="0.5" prefHeight="28.0" prefWidth="132.0" style="-fx-background-color: #e5e5dc;">
+               <font>
+                  <Font name="Imprint MT Shadow" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Text layoutX="584.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15; -fx-font-weight: bold;" text="Entrance:" underline="true">
+               <fill>
+                  <LinearGradient endY="0.81439394029704" startX="0.44318178837949584">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1621832400560379" green="0.8421052694320679" blue="0.2301754355430603" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.16862745583057404" green="0.0117647061124444" blue="0.0117647061124444" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <TextField fx:id="entranceField" editable="false" layoutX="653.0" layoutY="57.0" opacity="0.5" prefHeight="28.0" prefWidth="94.0" style="-fx-background-color: #e5e5dc;">
+               <font>
+                  <Font name="Imprint MT Shadow" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <Button layoutX="63.0" layoutY="602.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="143.0" style="-fx-background-color: #c66b3d; -fx-background-radius: 10;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="491.0" layoutY="608.0" text="Choose another term :">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="179.0" layoutY="201.0" text="Term : ">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="termField" alignment="CENTER" editable="false" layoutX="232.0" layoutY="201.0" prefHeight="16.0" prefWidth="78.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 10; -fx-border-style: dashed;" text="14021" />
+      <ComboBox fx:id="termBox" layoutX="633.0" layoutY="605.0" onAction="#changeTerm" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: rgb(160, 200, 190);">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Label layoutX="454.0" layoutY="203.0" text="GPA:">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="gpa" alignment="CENTER" editable="false" layoutX="500.0" layoutY="202.0" prefHeight="16.0" prefWidth="78.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 10; -fx-border-style: dashed;" />
+   </children>
+</Pane>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.TeacherController">
+   <children>
+      <AnchorPane prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #94c2a0;">
+         <children>
+            <Button fx:id="btn_exit" alignment="CENTER" contentDisplay="BOTTOM" layoutX="689.0" layoutY="10.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #32852A;" text="EXIT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="20.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user-cut.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="61.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name :" wrappingWidth="76.4052734375">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nameField" editable="false" layoutX="130.0" layoutY="10.0" prefHeight="28.0" prefWidth="165.0" style="-fx-background-color: #94c2a0;">
+               <font>
+                  <Font name="Imprint MT Shadow" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-1.0" layoutY="50.0" prefHeight="412.0" prefWidth="800.0" style="-fx-background-color: #cde0e1;">
+         <children>
+            <AnchorPane layoutX="41.0" layoutY="97.0" minHeight="0.0" minWidth="0.0" prefHeight="273.0" prefWidth="458.0" style="-fx-background-color: #328a2a;">
+               <children>
+                  <TableView fx:id="stTable" layoutY="-1.0" prefHeight="281.0" prefWidth="460.0" style="-fx-background-color: #b6d9ce;">
+                     <columns>
+                        <TableColumn fx:id="row" prefWidth="62.0" text="Row" />
+                        <TableColumn fx:id="nameCol" prefWidth="142.0" text="Full name" />
+                        <TableColumn fx:id="stNumCol" prefWidth="148.0" text="Students Number" />
+                        <TableColumn fx:id="scoreCol" prefWidth="107.0" text="Score" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="577.0" layoutY="138.0" text="Lesson name :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="LessonNameField" alignment="CENTER" editable="false" layoutX="669.0" layoutY="134.0" prefHeight="29.0" prefWidth="103.0" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 20; -fx-border-style: dotted;" />
+            <Text layoutX="576.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average score :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="average" alignment="CENTER" editable="false" layoutX="676.0" layoutY="203.0" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #cde0e1; -fx-border-color: green; -fx-border-radius: 20; -fx-border-style: dotted; -fx-background-radius: 25;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TitledPane fx:id="TitledPane" animated="false" contentDisplay="RIGHT" expanded="false" layoutX="24.0" layoutY="11.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="281.0" prefWidth="752.0" style="-fx-background-color: transparent;" stylesheets="@../../../style.css" text="Lessons Information">
+               <content>
+                  <TableView fx:id="LessonsTable" nodeOrientation="LEFT_TO_RIGHT" prefHeight="150.0" prefWidth="748.0" style="-fx-background-color: #b6d9ce;">
+                    <columns>
+                      <TableColumn fx:id="LesName" prefWidth="110.0" text="Lessons" />
+                        <TableColumn fx:id="LesUnit" prefWidth="112.0" text="Units" />
+                        <TableColumn fx:id="Les_stCount" prefWidth="173.0" text="Number of Students" />
+                      <TableColumn fx:id="LesDate" prefWidth="125.0" text="Date/Term" />
+                        <TableColumn fx:id="LesTime" minWidth="0.0" prefWidth="147.0" text="Time" />
+                        <TableColumn fx:id="btnAction" prefWidth="81.0" text="Action" />
+                    </columns>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TableView>
+               </content>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TitledPane>
+            <Button fx:id="EditScore" layoutX="672.0" layoutY="331.0" mnemonicParsing="false" onAction="#EditScore" prefHeight="16.0" prefWidth="67.0" style="-fx-background-color: #47887b;" text="Edit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="601.0" layoutY="333.0" text="Edit score :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

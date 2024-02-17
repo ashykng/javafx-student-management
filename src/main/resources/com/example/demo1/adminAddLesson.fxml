@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.adminAddLessonController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0">
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="700.0" opacity="0.25">
+               <image>
+                  <Image url="@IMG_20240106_154935_927.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="43.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18; -fx-font-weight: bold;" text="User Name :" wrappingWidth="106.00531768798828">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5132743447227816" centerY="0.43560606783086603" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.006549707613885403" green="0.5894736647605896" blue="0.0648421049118042" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.12682926829268293">
+                           <color>
+                              <Color green="1.0" blue="0.03333333507180214" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.16829268292682925">
+                           <color>
+                              <Color red="0.06261208653450012" green="0.7684210538864136" blue="0.08613905310630798" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.25609756097560976">
+                           <color>
+                              <Color red="0.11999999731779099" green="1.0" blue="0.14933332800865173" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.29756097560975614">
+                           <color>
+                              <Color red="0.06840000301599503" green="0.7599999904632568" blue="0.09145333617925644" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.4170731707317073">
+                           <color>
+                              <Color red="0.09600000083446503" green="0.47999998927116394" blue="0.1088000014424324" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.4853658536585365">
+                           <color>
+                              <Color red="0.09600000083446503" green="0.47999998927116394" blue="0.1088000014424324" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5146341463414633">
+                           <color>
+                              <Color red="0.09600000083446503" green="0.47999998927116394" blue="0.1088000014424324" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.6609756097560975">
+                           <color>
+                              <Color green="1.0" blue="0.03333333507180214" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7804878048780488">
+                           <color>
+                              <Color red="0.09504873305559158" green="0.4842105209827423" blue="0.10802078992128372" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.8682926829268293">
+                           <color>
+                              <Color red="0.06296296417713165" green="1.0" blue="0.09419753402471542" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.11481481790542603" green="1.0" blue="0.1443209946155548" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+               <effect>
+                  <DropShadow height="24.51" radius="7.952500000000001" spread="0.79" width="9.3" />
+               </effect>
+            </Text>
+            <TextField fx:id="nameField" editable="false" layoutX="149.0" layoutY="37.0" prefHeight="26.0" prefWidth="115.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="Imprint MT Shadow" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <effect>
+                  <DropShadow height="25.68" radius="14.68" width="35.04" />
+               </effect>
+            </TextField>
+            <Button fx:id="btn_exit" alignment="CENTER" contentDisplay="BOTTOM" layoutX="598.0" layoutY="35.0" mnemonicParsing="false" onAction="#exit" prefHeight="27.0" prefWidth="78.0" style="-fx-background-color: #32852A;-fx-border-radius: 30; -fx-background-radius: 30;" text="EXIT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="49.07" radius="27.5475" spread="0.61" width="63.12" />
+               </effect>
+            </Button>
+            <Button fx:id="btn_add" alignment="CENTER" contentDisplay="BOTTOM" layoutX="530.0" layoutY="597.0" mnemonicParsing="false" onAction="#add" prefHeight="31.0" prefWidth="123.0" style="-fx-background-color: #32852A; -fx-border-radius: 30; -fx-background-radius: 30;" text="+ADD " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="49.07" radius="27.5475" spread="0.61" width="63.12" />
+               </effect>
+            </Button>
+            <VBox alignment="TOP_CENTER" layoutY="170.0" prefHeight="360.0" prefWidth="106.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 2;">
+               <children>
+                  <HBox fx:id="menu" alignment="CENTER" prefHeight="76.0" prefWidth="106.0" style="-fx-border-color: #cbf6db; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3;">
+                     <children>
+                        <ImageView fitHeight="15.0" fitWidth="13.0" opacity="0.53">
+                           <image>
+                              <Image url="@Screenshot%25202024-01-27%2520174153.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label style="-fx-font-weight: bold; -fx-font-size: 25;" text="Menu">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="professorList" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="106.0" style="-fx-background-radius: 20; -fx-border-color: #cbf6db; -fx-border-radius: 20; -fx-border-width: 3;">
+                     <children>
+                        <Hyperlink onAction="#goHome" style="-fx-text-fill: black;" text="Home">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="lessonList" alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="69.0" prefWidth="106.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #cbf6db; -fx-border-width: 3;">
+                     <children>
+                        <Hyperlink onAction="#goLessonList" style="-fx-text-fill: black;" text="lesson List">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="logOut" alignment="CENTER" layoutX="10.0" layoutY="180.0" prefHeight="72.0" prefWidth="106.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #cbf6db; -fx-border-width: 3;">
+                     <children>
+                        <Hyperlink onAction="#GoProfList" style="-fx-text-fill: black;" text="Professor list">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="professorList1" alignment="CENTER" prefHeight="70.0" prefWidth="106.0" style="-fx-background-radius: 20; -fx-border-color: #cbf6db; -fx-border-radius: 20; -fx-border-width: 3;">
+                     <children>
+                        <Hyperlink onAction="#GoAddLesson" style="-fx-text-fill: black;" text="Add Lesson" underline="true">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <AnchorPane layoutX="138.0" layoutY="181.0" prefHeight="337.0" prefWidth="487.0" style="-fx-border-style: solid; -fx-border-radius: 10; -fx-border-width: 2;">
+               <children>
+                  <Text layoutX="25.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lesson :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="lesson" layoutX="108.0" layoutY="45.0" prefHeight="27.0" prefWidth="100.0" AnchorPane.bottomAnchor="265.0">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="33.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="unit" layoutX="107.0" layoutY="112.0" prefHeight="27.0" prefWidth="100.0">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="257.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Professor :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="teacher" layoutX="353.0" layoutY="45.0" prefHeight="26.0" prefWidth="100.0" AnchorPane.leftAnchor="353.0">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="25.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class time :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="classTime" layoutX="110.0" layoutY="257.0" prefHeight="27.0" prefWidth="100.0" promptText="Sat[10:00-12:00] . . ">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="30.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam date:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="examDate" layoutX="108.0" layoutY="184.0" prefHeight="27.0" prefWidth="100.0" promptText="1402/11/04">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="260.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam venue:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="ExamVenue" layoutX="358.0" layoutY="187.0" prefHeight="27.0" prefWidth="100.0">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="260.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class info:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="ClassInfo" layoutX="356.0" layoutY="115.0" prefHeight="27.0" prefWidth="100.0">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <Label fx:id="msg" alignment="CENTER" layoutX="224.0" layoutY="109.0" prefHeight="21.0" prefWidth="295.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>
